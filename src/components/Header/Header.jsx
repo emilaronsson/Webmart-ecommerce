@@ -30,7 +30,7 @@ const Header = () => {
                     <div className='logo'>
                         <img src={logo} alt='logo' />
                         <div>
-                            <h1>Furniture Eshop with react.js</h1>
+                            <h1>Webmart</h1>
 
                         </div>
                     </div>
