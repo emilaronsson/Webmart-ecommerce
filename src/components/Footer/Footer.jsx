@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className='footer'>
       <Container>
         <Row>
-          <Col lg='4'>
+          <Col lg='4' className='mb-4' md='6'>
             <div className='logo'>
               <div>
                   <h1 className='text-white'>Webmart</h1>
@@ -25,7 +25,7 @@ const Footer = () => {
               </p>
           </Col>
 
-          <Col lg='3'>
+          <Col lg='3' md='3' className='mb-4'>
             <div className='footer__links'>
               <h4 className='footer__links-title'>Top Categories</h4>
               <ListGroup>
@@ -48,7 +48,7 @@ const Footer = () => {
             </div>
           </Col>
 
-          <Col lg='2'>
+          <Col lg='2' md='3' className='mb-4'>
           <div className='footer__links'>
               <h4 className='footer__links-title'>Useful Links</h4>
               <ListGroup>
@@ -71,7 +71,7 @@ const Footer = () => {
             </div>
           </Col>
 
-          <Col lg='3'>
+          <Col lg='3' md='4'>
           <div className='footer__links'>
               <h4 className='footer__links-title'>Contact us</h4>
               <ListGroup className='footer__contact'>
