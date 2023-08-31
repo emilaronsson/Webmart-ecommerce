@@ -1,0 +1,19 @@
+.common__section{
+    background: url('../assets/images/blue-armchair-against-blue-wall-living-room-interior-elegant-interior-design-with-copy-space-ai-generative.jpg') no-repeat center center, linear-gradient(#0000006c, #0000006c) ;
+/*     background: rgba(red, green, blue, alpha);
+    background-image: url('../assets/images/bedroom.jpg');
+    background-image: url('../assets/images/bedroom.jpg'), linear-gradient(#000, #000) no-repeat center center; */
+    background-size: cover;
+    padding: 270px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.common__section h1{
+    color: #fff;
+    font-weight: 600;
+    font-size: 3.5rem;
+    padding-left: 70px;
+}
