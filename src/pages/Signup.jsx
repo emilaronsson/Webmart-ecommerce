@@ -21,7 +21,6 @@ const Signup = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [file, setFile] = useState(null);
   const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
@@ -38,9 +37,8 @@ const Signup = () => {
       );
 
       const user = userCredential.user;
-      //const storageRef = ref(storage, `users/${userCredential.user.uid}/profile.jpg`);
       const storageRef = ref(storage, `images/${Date.now() + username}`);
-      const uploadTask = uploadBytesResumable(storageRef, file);
+      const uploadTask = uploadBytesResumable(storageRef);
 
       uploadTask.on(
         "state_changed",
@@ -61,7 +59,6 @@ const Signup = () => {
               uid: user.uid,
               displayName: username,
               email: user.email,
-              photoURL: downloadURL,
             });
           });
         }
@@ -118,12 +115,12 @@ const Signup = () => {
                       onChange={(e) => setPassword(e.target.value)}
                     />
                   </FormGroup>
-                  <FormGroup className="form__group">
+                  {/* <FormGroup className="form__group">
                     <input
                       type="file"
                       onChange={(e) => setFile(e.target.files[0])}
                     />
-                  </FormGroup>
+                  </FormGroup> */}
 
                   <button
                     type="submit"
