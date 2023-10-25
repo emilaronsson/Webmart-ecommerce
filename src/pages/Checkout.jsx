@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Form, FormGroup } from "react-bootstrap";
+import { Container, Row, Col, Form, FormGroup } from "reactstrap";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
 
